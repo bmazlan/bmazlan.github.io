@@ -63,9 +63,9 @@
     }
   };
   const schedule = () => { if (!raf) raf = requestAnimationFrame(updateFrame); };
-  window.addEventListener('scroll', schedule, {passive:true});
-  window.addEventListener('resize', schedule, {passive:true});
-  window.addEventListener('pointermove', e => { pointerX = e.clientX; pointerY = e.clientY; schedule(); }, {passive:true});
+  window.addEventListener('scroll', schedule, { passive: true });
+  window.addEventListener('resize', schedule, { passive: true });
+  window.addEventListener('pointermove', e => { pointerX = e.clientX; pointerY = e.clientY; schedule(); }, { passive: true });
 
   if (!reduceMotion && tilt && window.matchMedia('(pointer:fine)').matches) {
     let tiltRaf = 0, tx = 0, ty = 0;
@@ -85,7 +85,7 @@
 
   // Keeps the hero graph alive forever. Data changes continuously instead of replaying a fixed animation.
   const points = 24;
-  let values = Array.from({length: points}, (_, i) => 95 + Math.sin(i * .7) * 18 + Math.random() * 18);
+  let values = Array.from({ length: points }, (_, i) => 95 + Math.sin(i * .7) * 18 + Math.random() * 18);
   const makePath = () => {
     const coords = values.map((v, i) => [i * (420 / (points - 1)), 160 - v]);
     let d = `M ${coords[0][0].toFixed(1)} ${coords[0][1].toFixed(1)}`;
