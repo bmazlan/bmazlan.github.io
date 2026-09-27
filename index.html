@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08110e">
+  <meta name="description" content="Brandon Mazlan — Staff Software Engineer specializing in backend services, APIs, distributed systems, performance, and developer platforms.">
+  <title>Brandon Mazlan — Staff Software Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Sans is requested as the sole UI typeface. -->
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <aside class="contact-rail" aria-label="Public contact links">
+    <a class="contact-pill github-pill" href="https://github.com/bmazlan" target="_blank" rel="noreferrer" aria-label="GitHub">
+      <span class="rail-icon">GH</span><span>GitHub</span>
+    </a>
+    <a class="contact-pill email-pill" href="mailto:brandon.mazlan@gmail.com" aria-label="Email Brandon Mazlan">
+      <span class="rail-icon">@</span><span>Email</span>
+    </a>
+    <a class="contact-pill phone-pill" href="tel:+17145848530" aria-label="Call Brandon Mazlan">
+      <span class="rail-icon">☎</span><span>Phone</span>
+    </a>
+  </aside>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Brandon Mazlan home">
+      <span class="brand-mark">BM</span>
+      <span>Brandon Mazlan</span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#stack">Stack</a>
+      <a href="#about">About</a>
+      <a href="#endorsements">Endorsements</a>
+      <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+        <span class="theme-sun">☼</span><span class="theme-moon">☾</span>
+      </button>
+      <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
+    </nav>
+    <button class="mobile-theme theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+      <span class="theme-sun">☼</span><span class="theme-moon">☾</span>
+    </button>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+  </header>
+
+  <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+    <a href="#work">Work</a>
+    <a href="#stack">Stack</a>
+    <a href="#about">About</a>
+    <a href="#endorsements">Endorsements</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse"></span> Staff Software Engineer · 10+ years</div>
+        <h1>Building <em>fast, resilient</em> systems that feel effortless.</h1>
+        <p class="hero-lede">I like turning tricky backend problems into systems that are quick, dependable, and pleasantly boring to operate.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#work">Explore the work <span>↓</span></a>
+          <a class="button button-soft" href="mailto:brandon.mazlan@gmail.com">Email me <span>↗</span></a>
+        </div>
+        <div class="hero-metrics" aria-label="Selected impact metrics">
+          <div><strong>30%</strong><span>API response improvement</span></div>
+          <div><strong>40%</strong><span>release-cycle reduction</span></div>
+          <div><strong>50%</strong><span>less manual maintenance</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" data-tilt aria-hidden="true">
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="orbit orbit-3"></div>
+        <div class="hero-orb orb-a"></div><div class="hero-orb orb-b"></div><div class="hero-orb orb-c"></div>
+        <div class="system-card">
+          <div class="system-top">
+            <span class="status-dot"></span>
+            <span>system / healthy</span>
+            <span class="tiny-live">LIVE</span>
+          </div>
+          <div class="graph" aria-label="Live randomized traffic graph">
+            <div class="graph-grid"></div>
+            <svg viewBox="0 0 420 180" preserveAspectRatio="none">
+              <path id="live-graph-path" d="M0 142 C25 138 30 112 55 119 S86 154 109 130 S139 91 162 103 S188 129 212 83 S242 112 270 71 S296 84 319 50 S346 72 368 42 S394 63 420 22" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+            <div class="graph-readout"><span>LIVE STREAM</span><strong id="graph-live-value">-- req/s</strong></div>
+          </div>
+          <div class="signal-row"><span><i></i> cache hit</span><span><i></i> queue clear</span><span><i></i> tracing</span></div>
+          <div class="system-stats">
+            <span><b>99.99%</b> availability</span>
+            <span><b>18ms</b> p95</span>
+            <span><b>4.2k</b> req/s</span>
+          </div>
+        </div>
+        <div class="float-chip chip-one">Redis <span>●</span></div>
+        <div class="float-chip chip-two">Kafka <span>●</span></div>
+        <div class="float-chip chip-three">GraphQL <span>●</span></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Technology areas">
+      <div class="ticker-track">
+        <span>SYMFONY</span><i>✦</i><span>SPRING BOOT</span><i>✦</i><span>NESTJS</span><i>✦</i><span>MICROSERVICES</span><i>✦</i><span>EVENT-DRIVEN</span><i>✦</i><span>OBSERVABILITY</span><i>✦</i><span>CI/CD</span><i>✦</i>
+        <span>SYMFONY</span><i>✦</i><span>SPRING BOOT</span><i>✦</i><span>NESTJS</span><i>✦</i><span>MICROSERVICES</span><i>✦</i><span>EVENT-DRIVEN</span><i>✦</i><span>OBSERVABILITY</span><i>✦</i><span>CI/CD</span><i>✦</i>
+      </div>
+    </section>
+
+    <section id="work" class="section-shell section">
+      <div class="section-ruler" aria-hidden="true"><span>01</span><i></i><span>WORK</span></div>
+      <div class="section-heading reveal">
+        <div>
+          <div class="kicker">Selected experience</div>
+          <h2>Where engineering<br><em>moves the needle.</em></h2>
+        </div>
+        <p>A few places where I got to untangle messy systems, ship useful changes, and leave things running a little smoother than I found them.</p>
+      </div>
+
+      <div class="experience-grid">
+        <article class="experience-card timeline-left featured reveal">
+          <div class="card-meta"><span>09/2025 — 05/2026</span><span>TX</span></div>
+          <div class="company-line"><span class="company-icon">LC</span><div><h3>Luminary Codeworks</h3><p>Staff Symfony Engineer</p></div></div>
+          <ul>
+            <li>Designed Symfony Messenger event-driven workflows to shift long-running work into asynchronous processing.</li>
+            <li>Cut API response times by <b>30%</b> using targeted Redis caching.</li>
+            <li>Cut release-cycle time by <b>40%</b> with Docker/Jenkins deployment automation.</li>
+            <li>Reduced manual maintenance intervention by <b>50%</b> with Symfony console commands.</li>
+            <li>Extended REST capabilities with GraphQL and strengthened production observability.</li>
+          </ul>
+          <div class="tags"><span>Symfony</span><span>PHP</span><span>Redis</span><span>Docker</span><span>GraphQL</span></div>
+        </article>
+
+        <article class="experience-card timeline-right reveal">
+          <div class="card-meta"><span>07/2023 — 09/2025</span><span>KY</span></div>
+          <div class="company-line"><span class="company-icon">RA</span><div><h3>Redwood Analytics</h3><p>Senior Java Spring Backend Developer</p></div></div>
+          <ul>
+            <li>Architected Spring Cloud microservices with clear boundaries and fault isolation.</li>
+            <li>Integrated Kafka-based asynchronous messaging for higher-throughput event processing.</li>
+            <li>Built Prometheus metrics and Grafana dashboards to surface bottlenecks earlier.</li>
+            <li>Reduced release-cycle time by <b>32%</b> through Jenkins/Docker automation.</li>
+          </ul>
+          <div class="tags"><span>Java</span><span>Spring Boot</span><span>Kafka</span><span>Grafana</span></div>
+        </article>
+
+        <article class="experience-card timeline-left reveal">
+          <div class="card-meta"><span>04/2020 — 06/2023</span><span>NY</span></div>
+          <div class="company-line"><span class="company-icon">VT</span><div><h3>Vertex Technologies</h3><p>Node.js Full-Stack Developer</p></div></div>
+          <ul>
+            <li>Designed NestJS microservices for concurrent workloads and independent scaling.</li>
+            <li>Standardized logging and error handling across services with shared decorators and interceptors.</li>
+            <li>Implemented Redis caching and automated Jenkins CI/CD workflows.</li>
+          </ul>
+          <div class="tags"><span>Node.js</span><span>NestJS</span><span>TypeScript</span><span>Redis</span></div>
+        </article>
+
+        <article class="experience-card timeline-right reveal">
+          <div class="card-meta"><span>02/2017 — 12/2019</span><span>LA</span></div>
+          <div class="company-line"><span class="company-icon">BT</span><div><h3>BrightTech Solutions</h3><p>Senior Front-End Developer</p></div></div>
+          <ul>
+            <li>Developed responsive applications with React, Angular, Vue.js, HTML5, CSS3, and JavaScript.</li>
+            <li>Built reusable UI components and scalable front-end architecture.</li>
+            <li>Improved performance through code optimization, state management, and responsive design.</li>
+          </ul>
+          <div class="tags"><span>React</span><span>Angular</span><span>Vue</span><span>Accessibility</span></div>
+        </article>
+
+        <article class="experience-card timeline-left reveal">
+          <div class="card-meta"><span>01/2016 — 01/2017</span><span>Los Angeles, CA</span></div>
+          <div class="company-line"><span class="company-icon">NT</span><div><h3>Nexora Technologies</h3><p>Full-Stack Developer</p></div></div>
+          <ul>
+            <li>Built full-stack applications and REST APIs with Python, Django, JavaScript, and PostgreSQL/MySQL.</li>
+            <li>Implemented authentication, authorization, data validation, tests, and asynchronous workflows.</li>
+            <li>Improved performance through database optimization, caching, and efficient Python code.</li>
+          </ul>
+          <div class="tags"><span>Python</span><span>Django</span><span>PostgreSQL</span><span>MySQL</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="stack" class="section-shell section stack-section">
+      <div class="section-ruler" aria-hidden="true"><span>02</span><i></i><span>STACK</span></div>
+      <div class="section-heading reveal">
+        <div>
+          <div class="kicker">The toolkit</div>
+          <h2>A broad stack,<br><em>deep where it counts.</em></h2>
+        </div>
+      </div>
+
+      <div class="stack-grid">
+        <div class="stack-card reveal"><span class="stack-number">01</span><h3>Languages</h3><p>JavaScript · TypeScript · PHP · Java · Python · C# · Kotlin</p></div>
+        <div class="stack-card reveal"><span class="stack-number">02</span><h3>Backend</h3><p>Symfony · Laravel · Spring Boot · Node.js · NestJS · Django · FastAPI · Flask · .NET Core</p></div>
+        <div class="stack-card reveal"><span class="stack-number">03</span><h3>Data & messaging</h3><p>PostgreSQL · MySQL · MongoDB · Redis · Neo4j · Cassandra · Kafka · RabbitMQ</p></div>
+        <div class="stack-card reveal"><span class="stack-number">04</span><h3>Cloud</h3><p>AWS · Azure · GCP · ECS · Lambda · RDS · Aurora · DynamoDB · Cloud Run · Firebase · Pub/Sub</p></div>
+        <div class="stack-card reveal"><span class="stack-number">05</span><h3>Architecture</h3><p>REST · GraphQL · OAuth 2.0 · JWT · Microservices · WebSockets · Event-Driven Architecture</p></div>
+        <div class="stack-card reveal"><span class="stack-number">06</span><h3>DevOps & AI</h3><p>Docker · Kubernetes · Terraform · Jenkins · GitHub Actions · Datadog · Sentry · Spark · BigQuery · OpenAI · RAG</p></div>
+      </div>
+    </section>
+
+    <section id="about" class="section-shell section about-section">
+      <div class="section-ruler" aria-hidden="true"><span>03</span><i></i><span>ABOUT</span></div>
+      <div class="about-panel reveal">
+        <div class="about-art" aria-hidden="true">
+          <div class="code-window">
+            <div class="code-dots"><i></i><i></i><i></i></div>
+            <pre><span>const</span> system = {
+  <b>clarity</b>: <em>true</em>,
+  <b>latency</b>: <em>"low"</em>,
+  <b>scale</b>: <em>"ready"</em>,
+  <b>observability</b>: <em>"on"</em>
+};</pre>
+          </div>
+        </div>
+        <div class="about-copy">
+          <div class="kicker">A little context</div>
+          <h2>Good architecture should make it easier to <em>ship, learn, and sleep at night.</em></h2>
+          <p>Brandon is a Staff Software Engineer focused on designing, modernizing, and operating backend services, APIs, and distributed applications. His work combines architectural execution with cross-functional delivery, emphasizing responsiveness, release efficiency, operational consistency, and maintainability.</p>
+          <div class="education">
+            <span class="edu-icon">✦</span>
+            <div><strong>Bachelor of Computer Science</strong><br>Drexel University · 2011 — 2015</div>
+          </div>
+          <div class="awards">
+            <span>Dean’s List</span><span>Outstanding CS Project</span><span>Academic Excellence Scholarship</span><span>Software Engineering Project Award</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="endorsements" class="section-shell section">
+      <div class="section-ruler" aria-hidden="true"><span>04</span><i></i><span>TRUST</span></div>
+      <div class="section-heading reveal">
+        <div>
+          <div class="kicker">Professional endorsements</div>
+          <h2>Trusted to make<br><em>complex work calmer.</em></h2>
+        </div>
+        <p class="small-note">Draft endorsement copy — replace these sample statements with verified quotes before publishing as testimonials.</p>
+      </div>
+      <div class="endorsement-grid">
+        <article class="quote-card reveal"><span class="quote-mark">“</span><p>Brandon brings a strong systems mindset to backend work — he connects architecture, performance, and operational reality instead of treating them as separate problems.</p><div class="quote-person"><span>EC</span><div><strong>Ethan Caldwell</strong><small>Professional endorsement draft</small></div></div></article>
+        <article class="quote-card reveal"><span class="quote-mark">“</span><p>He has a practical way of simplifying complicated services while keeping the engineering bar high. His focus on maintainability shows up in the details.</p><div class="quote-person"><span>MB</span><div><strong>Maya Bennett</strong><small>Professional endorsement draft</small></div></div></article>
+        <article class="quote-card reveal"><span class="quote-mark">“</span><p>Brandon consistently thinks about the whole delivery loop — from code and APIs through CI/CD, observability, and the experience of the engineers operating the system.</p><div class="quote-person"><span>LD</span><div><strong>Lucas Donovan</strong><small>Professional endorsement draft</small></div></div></article>
+        <article class="quote-card reveal"><span class="quote-mark">“</span><p>His engineering approach is measured and outcome-oriented. He looks for the bottleneck, makes the change concrete, and leaves the system easier to evolve.</p><div class="quote-person"><span>SR</span><div><strong>Sofia Reynolds</strong><small>Professional endorsement draft</small></div></div></article>
+        <article class="quote-card reveal"><span class="quote-mark">“</span><p>Brandon pairs deep backend knowledge with a collaborative delivery style, making him especially effective on distributed systems and modernization efforts.</p><div class="quote-person"><span>DM</span><div><strong>Daniel Mercer</strong><small>Professional endorsement draft</small></div></div></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section-shell section contact-section">
+      <div class="section-ruler" aria-hidden="true"><span>05</span><i></i><span>CONTACT</span></div>
+      <div class="contact-panel reveal">
+        <div class="contact-copy">
+          <div class="kicker">Got something tricky?</div>
+          <h2>Let's build something <em>thoughtful.</em></h2>
+          <p>Got a gnarly backend problem, a system that needs a tune-up, or just want to say hello? Drop me a note — I’d love to hear what you’re building.</p>
+          <div class="contact-mini">
+            <a href="mailto:brandon.mazlan@gmail.com">brandon.mazlan@gmail.com</a>
+            <a href="tel:+17145848530">(714) 584-8530</a>
+          </div>
+        </div>
+
+        <form id="contact-form" action="https://formspree.io/f/mljdpyod" method="POST" class="contact-form">
+          <input type="hidden" name="_subject" value="New portfolio inquiry for Brandon Mazlan">
+          <input type="hidden" name="_next" value="#">
+          <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="field-row">
+            <label><span>Name</span><input required name="name" autocomplete="name" placeholder="Your name"></label>
+            <label><span>Email</span><input required type="email" name="email" autocomplete="email" placeholder="you@company.com"></label>
+          </div>
+          <label><span>What are you working on?</span><textarea required name="message" rows="6" placeholder="A few words about the problem, project, or role…"></textarea></label>
+          <button class="button button-dark submit-button" type="submit"><span>Send message</span><span>↗</span></button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          <p class="recaptcha-note">Protected with lightweight anti-spam checks. If you prefer, you can also email me directly.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-shell">
+    <div>© 2026 Brandon Mazlan</div>
+    <div>Staff Software Engineer · Built for speed, clarity, and calm.</div>
+  </footer>
+
+</body>
+</html>
